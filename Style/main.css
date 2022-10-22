@@ -51,7 +51,7 @@ header nav a:hover{
 
 .filme-principal{
     font-size: 16px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(/imagens/fundo-cidadeDeus.jpg);
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(../imagens/fundo-cidadeDeus.jpg);
     height: 400px; /*tamanho da caixa*/
     background-size: cover; /*Faz a imagem se adequar a caixa*/
     display: flex;
