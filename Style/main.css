@@ -1,0 +1,141 @@
+:root{
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*PEnsa numa caixa e dentro dela outras caixas que não perfura a primeira*/
+}
+
+/*==================   Elementos base  =======================*/
+
+body{
+    background: var(--preta);
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /*joguei para direita*/
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'arial black', Times;
+    font-size: 40px;
+}
+
+header .logo span{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'arial black', Times;
+    font-size: 50px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/*================= titulo principal ==========================*/
+
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(/imagens/fundo-cidadeDeus.jpg);
+    height: 400px; /*tamanho da caixa*/
+    background-size: cover; /*Faz a imagem se adequar a caixa*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.filme-principal .titulo{
+    margin-top: 20px;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.filmes h2{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin: 10px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.series h2{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin: 10px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.desenhos h2{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin: 10px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-flimes{
+    margin: 20px;
+}
+
+.carrosel-series{
+    margin: 20px;
+}
+
+.carrosel-desenhos{
+    margin: 20px;
+}
